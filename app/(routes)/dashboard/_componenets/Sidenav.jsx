@@ -37,12 +37,7 @@ function Sidenav() {
             path:'/dashboard/expensesData'
         },
 
-        {
-            id:4,
-            name:'Upgrade',
-            icon:ShieldCheck,
-            path:'/upgrade'
-        },
+       
         
 
     ]

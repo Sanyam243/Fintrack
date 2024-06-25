@@ -94,10 +94,10 @@ function ExpenseScreen({params}) {
       console.log(result)
     }
   return (
-    <div className='p-10'>
+    <div className='p-5  md:p-10'>
 
       
-      <h2 className='text-2xl font-bold flex justify-between items-center '> <span className='flex gap-2 items-center'>
+      <h2 className='text-2xl md:text-2xl font-bold flex justify-between items-center '> <span className='flex gap-2 items-center'>
       <ArrowLeft  className='cursor-pointer' onClick={()=>router.back()} />My Expenses
       </span>
      
@@ -105,7 +105,7 @@ function ExpenseScreen({params}) {
       <div className='flex gap-6'>
       <EditBudget  budgetInfo={budgetInfo} refreshData={()=>getBudgetinfo()}/>
       <AlertDialog>
-  <AlertDialogTrigger className='flex gap-2'> <div className='p-3 bg-red-500 rounded-lg text-sm text-white hover:bg-red-400' >Delete Budget</div></AlertDialogTrigger>
+  <AlertDialogTrigger className='flex gap-2'> <div className='p-2 md:p-3 bg-red-500 rounded-lg text-sm text-white hover:bg-red-400' >Delete Budget</div></AlertDialogTrigger>
   <AlertDialogContent>
     <AlertDialogHeader>
       <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>

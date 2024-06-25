@@ -21,16 +21,16 @@ const Dash=()=>{
 function DashboardHeader() {
   return (
     <div className='p-5 shadow-sm border flex justify-between'>
-    <div></div>
-     <div className='flex justify-between gap-8'>
+    <div className=''></div>
+     <div className='flex justify-between gap-4'>
 
 
-     <Button onClick={()=>Home()} >
+     <Button size='sm' onClick={()=>Home()} >
      
       Home</Button>
-      <Button  onClick={()=>Dash()} className='md:hidden '>Dashboard</Button>
-      <Button  onClick={()=>Budgets()}className=' md:hidden'>Budgets</Button>
-      <Button  onClick={()=>Expenses()} className=' md:hidden'>Expenses</Button>
+      <Button  size='sm' onClick={()=>Dash()} className='md:hidden '>Dashboard</Button>
+      <Button size='sm' onClick={()=>Budgets()}className='md:hidden'>Budgets</Button>
+      
       <UserButton/></div>
 
     </div>
