@@ -37,13 +37,13 @@ function Expensetable({expenseList,refreshData}) {
 
         {
             expenseList.map((expense,index)=>(
-            <div className='grid grid-cols-4  p-2 hover:bg-slate-100 cursor-pointer'> 
+            <div className='grid grid-cols-4  p-2 hover:bg-slate-100 cursor-pointer gap-2'> 
 
-                <h2>{expense.name}</h2>
-                <h2>{expense.amount}</h2>
-                <h2>{expense.createdAt}</h2>
+                <h2 className='text-sm md:text-base '>{expense.name}</h2>
+                <h2 className='text-sm md:text-base '>{expense.amount}</h2>
+                <h2 className='text-sm md:text-base '>{expense.createdAt}</h2>
                 <h2>
-                    <TrashIcon className='cursor-pointer ml-2 hover:shadow-sm'onClick={()=>deleteExpense(expense.id)} src={"/delete.svg"} width={20} height={20}/>
+                    <TrashIcon className='cursor-pointer text-sm md:text-base text-red-600  ml-2 hover:shadow-sm 'onClick={()=>deleteExpense(expense.id)} />
                 </h2>
 
                 </div>
