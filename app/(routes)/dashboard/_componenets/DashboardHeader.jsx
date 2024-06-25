@@ -1,11 +1,20 @@
 import { UserButton } from '@clerk/nextjs'
 import React from 'react'
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
+const Home=()=>{
+  window.location.href='/'
+}
 function DashboardHeader() {
   return (
     <div className='p-5 shadow-sm border flex justify-between'>
-     <div></div>
-     <div><UserButton/></div>
+    <div></div>
+     <div className='flex justify-between gap-5'>
+     <Button onClick={()=>Home()} >
+     
+      Home</Button>
+      <UserButton/></div>
 
     </div>
   )
