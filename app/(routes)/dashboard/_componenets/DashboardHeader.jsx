@@ -25,11 +25,12 @@ function DashboardHeader() {
      <div className='flex justify-between gap-4'>
 
 
-     <Button size='sm' onClick={()=>Home()} >
+     <Button  className='hidden md:flex' onClick={()=>Home() } >Home</Button>
      
-      Home</Button>
-      <Button  size='sm' onClick={()=>Dash()} className='md:hidden '>Dashboard</Button>
+    
+      <Button  size='sm' onClick={()=>Dash()} className='md:hidden'>Dashboard</Button>
       <Button size='sm' onClick={()=>Budgets()}className='md:hidden'>Budgets</Button>
+      <Button size='sm' onClick={()=>Expenses()}className='md:hidden'>Expenses</Button>
       
       <UserButton/></div>
 

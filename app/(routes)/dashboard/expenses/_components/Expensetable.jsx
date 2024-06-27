@@ -24,7 +24,7 @@ function Expensetable({expenseList,refreshData}) {
 
 
 
-    <div className='mt-3 ml-4'>
+    <div className='mt-3 ml-4 border p-3 rounded-lg'>
 
         <h2 className='font-bold mb-3 text-2xl'>Latest Expenses</h2>
         <div className='grid grid-cols-4 bg-slate-300 p-2'>
