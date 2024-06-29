@@ -30,8 +30,8 @@ function Expensetable({expenseList,refreshData}) {
         <div className='grid grid-cols-4 bg-slate-300 p-2'>
             <h2 className='font-bold'>Name</h2>
             <h2 className='font-bold'>Amount</h2>
-            <h2 className='font-bold'>Date</h2>
-            <h2 className='font-bold'>Action </h2>
+            <h2 className='font-bold ml-4'>Date</h2>
+            <h2 className='font-bold ml-3'>Action </h2>
 
         </div>
 
@@ -43,7 +43,7 @@ function Expensetable({expenseList,refreshData}) {
                 <h2 className='text-sm md:text-base '>{expense.amount}</h2>
                 <h2 className='text-sm md:text-base '>{expense.createdAt}</h2>
                 <h2>
-                    <TrashIcon className='cursor-pointer text-sm md:text-base text-red-600  ml-2 hover:shadow-sm 'onClick={()=>deleteExpense(expense.id)} />
+                    <TrashIcon className='cursor-pointer text-sm md:text-base text-red-600  ml-4 hover:shadow-sm 'onClick={()=>deleteExpense(expense.id)} />
                 </h2>
 
                 </div>

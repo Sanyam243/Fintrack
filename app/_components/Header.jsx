@@ -14,7 +14,7 @@ function Header  () {
 
   return (
     <div className='p-4 flex justify-between items-center border shadow-sm'>
-        <span className='flex p-2 text-1xl font-extrabold sm:text-2xl '>
+        <span className='flex p-2 text-lg font-extrabold sm:text-2xl '>
         <Image src={'./logo.svg'}
       width={50}
       height={50}
